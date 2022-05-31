@@ -39,6 +39,7 @@ import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import AutoSave from '@ckeditor/ckeditor5-autosave/src/autosave';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
+import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -77,7 +78,8 @@ ClassicEditor.builtinPlugins = [
 	Indent,
 	IndentBlock,
 	AutoSave,
-	Alignment
+	Alignment,
+	SourceEditing,
 ];
 
 // eslint-disable-next-line no-undef
@@ -116,7 +118,7 @@ ClassicEditor.defaultConfig = {
 			'redo',
 			'|',
 			'removeFormat',
-			''
+			'sourceEditing'
 		]
 	},
 	heading: {
